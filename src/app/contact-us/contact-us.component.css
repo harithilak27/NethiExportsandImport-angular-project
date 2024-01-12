@@ -1,6 +1,6 @@
 
 .contact-header{
-    margin-top: -50px;
+    margin-top: 25px;
     padding-top: 80px;
     height: 150px;
     background-color: rgba(214, 153, 23, 0.123);
@@ -21,7 +21,7 @@ h1{
     padding: 0;
 }
 .details{
-    margin: 80px auto;
+    margin: 100px auto;
     max-width: 1600px;
     font-size: 23px;
     line-height: 50px;

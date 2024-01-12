@@ -5,44 +5,16 @@
     font-size: 20px;
     text-decoration: none solid rgb(155, 158, 168);
     font-weight: 400;
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 1600px;
     position: relative;
 }
 .header p{
     color: rgb(153, 153, 153);
 }
-section{
-    display: flex;
-    justify-content: space-between;
-}
-.gaq{
-    font-size: 22px;
-    color: black;
-    background-color: rgb(247, 250, 255);
-    border: 3px solid rgb(224, 234, 253);
-    width: 250px;
-    padding: 18PX;
-    border-radius: 30PX;
-    margin-top: 33px;
-}
-.gaq:hover{
-    cursor: pointer;
-    background-color: rgb(247, 250, 255);
-    border: 3px solid rgb(224, 234, 253);
-}
-.abt-flex{
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-}
-.call, .locate{
-    width: 80px;
-    margin-top: 24px;
-}
 .menu-open{
-    font-size: 42px;
-    margin-top: 30px;
+    font-size: 27px;
+    margin: 0  30px;
     display: none;
     cursor: pointer;
 }
@@ -53,14 +25,17 @@ section{
     font-size: 20px;
 }
 .navbar{
-    margin-top: 15px;
-    line-height: 20px;
-    background-color: rgba(2, 45, 85, 0.692);
-    color: white;  
+    background-color: white;
+    color: black;  
     position: sticky;
     top: 0px;
     z-index: 2;
+    margin: 0 auto;
     width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 6px 5px 5px #f0f0f0;
+    border-radius: 8px;
 }
 .navbar p{
     color: white;
@@ -71,14 +46,15 @@ section{
 }
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: black;
+    margin-top: 15px;
 }
 .navbar a::after{
     content: " ";
     display: block;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: black;
     transition: width 0.3s;
 }
 
@@ -97,8 +73,12 @@ li{
     gap: 30px;
 }
 .navbar li:hover{
-    color: rgb(189, 201, 255);
+    color: grey;
     cursor: pointer;
+}
+.nested-nav{
+    color: black;
+    margin-top: 15px;
 }
 .nested-nav .list2{
     display: none;
@@ -107,18 +87,17 @@ li{
     position: absolute;
     width: 300px;
     padding: 0;
-    /* box-shadow: 5px 6px 5px 5px #d6d6d6; */
 }
 .list2:hover{
     display: block;
 }
 .list2 .blank{
-    background-color: rgba(2, 45, 85, 0.692);
-    color: rgba(2, 45, 85, 0.692);
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(128, 128, 128, 0);
     padding: 20px 20px;
 }
 .list2 .blank:hover{
-    background-color: rgba(2, 45, 85, 0.692);
+    background-color: rgba(128, 128, 128, 0);
 }
 .list2 li{ 
     color: black;
@@ -127,15 +106,31 @@ li{
     padding: 20px;
     margin: 0;
 }
+.organic:hover{
+    background-color: rgba(128, 128, 128, 0);
+}
+.list3{
+    display: none;
+    line-height: 10px;
+    background-color: rgba(128, 128, 128, 0);
+    /* position: absolute;
+    width: 300px; */
+    padding: 0;
+    /* box-shadow: 5px 6px 5px 5px #d6d6d6; */
+    flex-direction: column;
+    margin-left: 50px;
+}
+.list3:hover{
+    display: block;
+    background-color: rgba(128, 128, 128, 0);
+}
 .logo{
     margin-top: -30px;
 }
 .list2 li:hover{
-    background-color: aliceblue;
     color: black;
 }
 .nested-nav:hover{
-    color: rgb(189, 201, 255);
     transition: all 1s;
     cursor: pointer;
 }
@@ -152,7 +147,6 @@ li{
     color: white;
     font-size: 80px;
     display: none;
-    
 }
 .whatsapp{
     position: fixed;
@@ -174,7 +168,6 @@ li{
 }
 @media screen and (max-width: 1600px) {
     .navbar{
-        margin-top: 10px;
         width: 100%;
     }
     section{
@@ -196,35 +189,25 @@ li{
     }
 }
 @media screen and (max-width: 1000px) {
-    .abt-flex{
-        display: none;
-    }
-    section{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px 20px;
-        /* z-index: -1px; */
-    }
     .menu-open{
         display: block;
     }
     .navbar{
+        text-align: left;
+        z-index: 4;
+    }
+    .navbar-flex{
         overflow-y: scroll;
         margin: 0;
         position: absolute;
         top: 0;
         right: 0;
-        font-size: 22px;
         height: 100vh;
-        width: 500px;
-        background-color: rgba(2, 45, 85, 0.692);
-        z-index: 2;
-        color: black;
+        width: 75%;
+        background-color: rgb(252, 252, 252);
+        z-index: 5;
         padding-top: 50px;
-        color: rgb(155, 155, 155);
-    }
-    
-    .navbar-flex{
+        color: white;
         display: block;
     }
     .navbar ul{
@@ -237,7 +220,7 @@ li{
         padding-left: 20px;
     }
     .list2 li{
-        color: white;
+        color: black;
 
     }
     .navbar p{
@@ -271,7 +254,6 @@ li{
     }
     @media screen and (max-width: 550px) {
         .navbar{
-            width: 250px;
             font-size: 14px;
         }
         .logo{
@@ -279,9 +261,9 @@ li{
             margin-top: 10px;
         }
         .menu-open{
-            margin: 0;
-            font-size: 30px;
-            margin-top: 10px;
+            /* margin: 0; */
+            font-size: 25px;
+            /* margin-top: 10px; */
         }
         .navbar ul{
             line-height: 40px;

@@ -1,5 +1,5 @@
 .contact-header{
-    margin-top: -50px;
+    margin-top: 25px;
     padding-top: 80px;
     height: 150px;
     background-color: rgba(214, 153, 23, 0.123);
@@ -22,7 +22,7 @@ h1{
  .ng-home-about{
     display: flex;
     justify-content: space-between;
-    margin: 50px auto 10px auto;
+    margin: 20px auto 10px auto;
     width: 1600px;
     line-height: 35px;
     font-size: 25px;

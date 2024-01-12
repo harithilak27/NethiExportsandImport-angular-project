@@ -1,76 +1,58 @@
-<!-- <div class="header"> -->
-  <section class="header">
-  <div>
-    <img class="logo" src="../assets/images/logo.jpg" alt="" />
-  </div>
-  <div class="abt-flex">
-    <div class="abt-flex">
-      <div>
-        <img class="call" src="../assets/images/call.PNG" alt="" />
-      </div>
-      <div>
-        <h4>(+91) 8248339060</h4>
-        <p>Any quries? Call us.</p>
-      </div>
-    </div>
-    <div class="abt-flex">
-      <div>
-        <img class="call" src="../assets/images/locate.PNG" alt="" />
-      </div>
-      <div>
-        <h4>COIMBATORE-641008</h4>
-        <p>8/545,b.kpudur,Coimbatore-641008</p>
-      </div>
-    </div>
-    <div>
-      <a routerLink="contactus"><button type="button" class="gaq"><b>GET A QUOTE</b></button></a>
-    </div>
-  </div>
-  <div class="menu-open">
-    <h3 (click)="clickEvent()">☰</h3>
-  </div>
-  </section>
+<section class="header">
 
-  
-  <div class="navbar header" id="open" [ngClass]="status ? 'success' : 'hidden'">
-    <nav class="modal">
-      <div class="navbar-flex">
-        <ul>
-          <a class="menu-close"><li  (click)="clickEvent()">&#8999;</li></a>
-          <a routerLink="home"><li>HOME</li></a>
-          <a routerLink="aboutus"><li>ABOUT US</li></a>
-          <a><li class="nested-nav">OUR SERVICES<br>
-            <ul class="list2">                 
-              <li class="blank"></li>
-              <a routerLink="products/vegetables"><li>VEGETABLES</li></a>
-              <a routerLink="products/cocoProducts"><li>COCO PRODUCT</li></a>
-              <a routerLink="products/leaves"><li>LEAVES</li></a>
-              <a routerLink="products/organicFertilizer"><li>ORGANIC FERTILIZER</li></a>  
-              <a routerLink="products/organicProducts"><li>OTHER PRODUCTS</li></a>  
+</section>
+
+
+<div class="navbar">
+<div>
+    <img src="../assets/images/logo.png" alt="">
+</div>
+<div class="navbar-flex" id="open" [ngClass]="status ? 'success' : 'hidden'">
+    <div id="open" [ngClass]="status ? 'success' : 'hidden'">
+    <ul>
+    <div class="menu-close" >
+        <h3 (click)="clickEvent()">&#8999;</h3>
+    </div>
+    <a routerLink="home"><li>HOME</li></a>
+    <a routerLink="aboutus"><li>ABOUT US</li></a>
+    <a><li class="nested-nav">OUR SERVICES<br>
+        <ul class="list2">                 
+        <li class="blank"></li>
+        <a routerLink="products/vegetables"><li>VEGETABLES</li></a>
+        <a routerLink="products/cocoProducts"><li>COCO PRODUCT</li></a>
+        <a routerLink="products/leaves"><li>LEAVES</li></a>
+        <li class="organic">ORGANIC PRODUCTS<br />
+            <ul class="list3">
+              <a><li>FERTILIZER</li></a>
+              <a><li>FOODS</li></a>
+              <a><li>COSMETICS</li></a>
             </ul>
-          </li></a>
-          <a><li>GALLERY</li></a>
-          <a routerLink="contactus"><li>CONTACT US</li></a>
-        </ul>
-        <div class="number">
-          
-        </div>
-      </div>
-    </nav>
-  </div>
+        </li>
+        <a routerLink="products/organicProducts"><li>OTHER PRODUCTS</li></a>  
+      </ul>
+    </li></a>
+    <a><li>GALLERY</li></a>
+    <a routerLink="contactus"><li>CONTACT US &nbsp; &nbsp;&nbsp;</li></a>
+    </ul>
+    </div>
+</div>
+<div class="menu-open">
+    <h3 (click)="clickEvent()">&#9776;</h3>
+</div>
+</div>
 
 
 <router-outlet></router-outlet>
 
 <app-footer />
 <div class="whatsapp">
-  <a href="http://wa.me/+918248339060" target="_blank">
-    <img class="w-img" src="../assets/images/whatsapp.256x256.png" alt="" />
-  </a>
+<a href="http://wa.me/+918248339060" target="_blank">
+  <img class="w-img" src="../assets/images/whatsapp.256x256.png" alt="" />
+</a>
 </div>
 <div class="tel">
-  <a href="tel:8248339060">
-    <img class="t-img" src="../assets/images/tel.png" alt="" />
-  </a>
+<a href="tel:8248339060">
+  <img class="t-img" src="../assets/images/tel.png" alt="" />
+</a>
 </div>
 
