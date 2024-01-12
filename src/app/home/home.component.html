@@ -1,0 +1,85 @@
+<div class="slider-container">
+    <div class="slider">
+      <img [src]="images[currentImageIndex]" class="slider-img" alt="Current Slide" />
+    </div>
+    <div class="navigation">
+      <button (click)="prevImage()" class="arrow">&#8656;</button>
+      <button (click)="nextImage()" class="arrow">&#8658;</button>
+    </div>
+</div>
+
+<!-- about us -->
+
+<div class="home-about">
+  <div class="about">
+    <h1>ABOUT US</h1>
+    <P><b>Nethi Export And Import </b> is an emerging Exporter, Trader, Supplier & Importer of various  Products 
+      in the market. Based at Tamil Nadu (India), we are your gateway to global markets. Specializing in 
+      international trade, we take pride in facilitating seamless exports to destinations around the world. 
+      Our mission is to [briefly state your company's mission or values], ensuring our clients experience 
+      unparalleled service in the realm of global commerce.</P>
+    <P><b>Navigating Global Horizons </b><br /> Embark on a journey of international business success with Nethi Export and Import. 
+      Our dedicated team brings a wealth of experience and expertise to every export venture, providing a 
+      comprehensive range of services to meet your global trade needs.</P>
+  </div>
+  <div class="about-img">
+    <img src="../../assets/images/home-img1.jpg" alt="" />
+  </div>
+</div>
+
+
+<div class="home-about">
+  <div class="about-img">
+    <img src="../../assets/images/home-img2.jpg" alt="" />
+  </div>
+  <div class="about">
+    <h1>WHY CHOOSE US?</h1>
+    <P><b>Global Reach:</b> Benefit from our extensive network and reach customers in diverse markets.</P>
+    <p><b>Efficiency:</b> We streamline the export process, ensuring timely and efficient delivery of your products.</p>
+    <p><b>Tailored Solutions:</b> Our team crafts personalized export solutions to match the unique requirements of your business.</p> 
+    <p>From logistics and documentation to market analysis and regulatory compliance, Nethi Export And Import is your 
+      one-stop solution for all things export-related. Whether you are a seasoned exporter or exploring international trade for the first time, we are here to guide you through the complexities and make your global business endeavors a success.</p>
+  </div>
+</div>
+
+<!-- our products -->
+
+<div class="our-products">
+  <h1>OUR PRODUCT</h1>
+  <div class="product-flex">
+    <div>
+      <img class="products" src="../../assets//images//gallery/vegetables.jpg" alt="" />
+    </div>
+    <div>
+      <img class="products" src="../../assets//images//gallery/leavess.jpg" alt="" />
+    </div>
+  </div>
+  <div class="product-flex">
+    <div>
+      <img class="products" src="../../assets//images//gallery/COCO.jpg" alt="" />
+    </div>
+    <div>
+      <img class="products" src="../../assets//images//gallery/pulses.jpg" alt="" />
+    </div>
+    <div>
+      <img class="products" src="../../assets//images//gallery/rice.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+<!-- gallery -->
+
+<div class="gallery">
+  <h1>GALLERY</h1>
+  <ng-image-slider #nav
+    [images]="imageObject"
+    [imagePopup]="false"
+    [infinite]="false"
+    [autoSlide]="1"
+    [imageSize]="{width: '250px'}"
+    slideImage="1"
+    (imageClick)="imageClickHandler($event)"></ng-image-slider>
+</div>
+
+
+  

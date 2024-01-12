@@ -1,0 +1,126 @@
+.contact-header{
+    margin-top: -50px;
+    padding-top: 80px;
+    height: 150px;
+    background-color: rgba(214, 153, 23, 0.123);
+    color: black;
+}
+.text-align-header{
+    margin: 10px auto;
+    max-width: 1600px;
+    text-align: left;
+}
+h1{ 
+    font-size: 40px;
+}
+.abt-page{
+    margin: 0 auto;
+    width: 1600px;
+}
+
+/*  */
+ .ng-home-about{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 10px auto;
+    width: 1600px;
+    line-height: 35px;
+    font-size: 25px;
+    word-spacing: 10px;
+   }
+
+   .ng-about{
+     margin: 0 auto;
+     text-align: justify;
+     margin-top: 80px;
+     line-height: 35px;
+    font-size: 25px;
+    word-spacing: 10px;
+   }
+
+   .quality{
+    text-align: justify;
+    line-height: 35px;
+    font-size: 25px;
+    word-spacing: 10px;
+    margin: 20px auto;
+    max-width: 1600px;
+   }
+   .sec2{
+    margin: 0 auto;
+    width: 50%;
+    margin-top:100px;
+    
+   }
+   .sec2 .ei{
+       margin: 0 auto;
+       text-align: center;
+   }
+@media screen and (max-width: 1600px) {
+    .ng-home-about{
+        width: 90%;
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .sec2{
+        margin-top: 0px;
+        width: auto;
+        margin: 40px auto;
+       }
+       .quality{
+        margin: 20px 50px;
+        max-width: 1000px;
+    }
+   }
+   @media screen and (max-width: 1000px) {
+    .contact-header{
+        margin-top: 50px;
+    }
+    .text-align-header{
+        text-align: center;
+        
+    }
+    img{
+        width: 100%;
+    }
+    .ng-home-about{
+        line-height: 28px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+    .ng-about{
+        line-height: 28px;
+        font-size: 20px;
+        word-spacing: 10px;
+
+    }
+    .quality{
+        line-height: 28px;
+        font-size: 18px;
+        word-spacing: 10px;
+        margin: 20px auto;
+        max-width: 600px;
+       }
+       h1{ 
+        font-size: 30px;
+    }
+   }
+   @media screen and (max-width: 450px) {
+    .ng-home-about{
+        width: 100%;
+        line-height: 28px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+    .quality{
+        line-height: 28px;
+        font-size: 18px;
+        word-spacing: 7px;
+        margin: 20px auto;
+        max-width: 300px;
+    }
+    h1{ 
+        font-size: 25px;
+    }
+   }
