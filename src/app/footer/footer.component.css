@@ -1,9 +1,13 @@
 .footer{
     margin: 0 auto;
-    background-color: rgba(2, 45, 85, 0.692);
+    background-image: url('../../assets/images/1.jpg');
+    background-size: cover;
     width: 100%;
     color: white;
+}
+.bg{
     padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.719);
 }
 .footer-flex{
     margin: 0 auto;

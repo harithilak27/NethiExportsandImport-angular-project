@@ -8,7 +8,6 @@ import { defer } from 'rxjs';
 })
 export class AppComponent {
   title = 'ang-app';
-  // faMobile = faMobile;
 
   status: boolean = false;
 

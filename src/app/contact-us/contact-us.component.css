@@ -3,7 +3,7 @@
     margin-top: 25px;
     padding-top: 80px;
     height: 150px;
-    background-color: rgba(214, 153, 23, 0.123);
+    background-color: rgb(230, 230, 230);
     color: black;
 }
 .text-align-header{
@@ -25,16 +25,26 @@ h1{
     max-width: 1600px;
     font-size: 23px;
     line-height: 50px;
-    display: flex;
-    gap: 50px;
 }
 .details-address{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+.add{
     background-color: rgba(240, 248, 255, 0.63);
     text-align: center;
-    width: 700px;
-    padding: 10px;
     box-shadow: 5px 6px 5px 5px #f0f0f0;
     border-radius: 8px;
+    width: 35%;
+}
+.call{
+    background-color: rgba(240, 248, 255, 0.63);
+    text-align: center;
+    box-shadow: 5px 6px 5px 5px #f0f0f0;
+    border-radius: 8px;
+    width: 35%;
 }
 .details-address h1{
     font-size: 80px;
@@ -50,11 +60,13 @@ h1{
 /* section-2 */
 
 .section-2{
+    /* text-align: center; */
+    margin: 13px auto;
     width: 45%;
     background-color: white;
+    box-shadow: 5px 6px 5px 5px #f0f0f0;
     padding: 15px 25px;
     border-radius: 10px;
-    margin: 13px;
 }
 form{
     display: grid;
@@ -121,7 +133,16 @@ form h3{
         display: block;
     }
     .details-address{
-        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .call{
+        padding-top: 5px;
+        width: 100%;
+    }
+    .add{
+        width: 100%;
+        padding-top: 5px;
     }
     .section-2{
         width: auto;
