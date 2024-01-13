@@ -23,6 +23,10 @@ h1{
 .v-flex{
     display: flex;
     gap: 30px;
+    margin: 20px 0;
+}
+.left{
+    margin-top: 50px;
 }
 @media screen and (max-width: 1600px) {
     .section{
