@@ -24,6 +24,12 @@
 .icons{
     font-size: 20px;
 }
+.logo-flex{
+    display: flex;
+}
+.logo-flex h2{
+    margin-top: 45px;
+}
 .navbar{
     background-color: white;
     color: black;  
@@ -280,6 +286,14 @@ li{
         }
         .navbar ul{
             line-height: 40px;
+        }
+        .logo-flex{
+            display: block;
+        }
+        .logo-flex h2{
+            margin-top: 0;
+            font-size: 16px;
+            margin-left: 5px;
         }
     }
 }
