@@ -57,6 +57,24 @@ h1{
        text-align: center;
        margin-left: 50px;
    }
+   .whatsapp{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 3;
+  }
+  .tel{
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 3;
+  }
+  .w-img{
+    border-radius: 50px;
+  }
+  .t-img{
+    border-radius: 60px;
+  }
 @media screen and (max-width: 1600px) {
     .ng-home-about{
         width: 90%;

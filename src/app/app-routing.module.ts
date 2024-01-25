@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -13,9 +16,14 @@ import { OrganicFoodsComponent } from './organic/organic-foods/organic-foods.com
 import { OrganicCosmeticsComponent } from './organic/organic-cosmetics/organic-cosmetics.component';
 import { MilletsComponent } from './products/millets/millets.component';
 import { EcoFriendlyComponent } from './products/eco-friendly/eco-friendly.component';  
+import { AuthGuard } from './guards/auth.guard';
+
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
+  // {path:'signin',component:SignupComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate: [AuthGuard]},
+  {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'contactus',component:ContactUsComponent},
   {path:'aboutus',component:AboutComponent},
@@ -28,7 +36,7 @@ const routes: Routes = [
   {path:'products/organic/organicCosmetics',component:OrganicCosmeticsComponent},
   {path:'products/millets',component:MilletsComponent},
   {path:'products/ecoFriendly',component:EcoFriendlyComponent},
-  {path:'products/organicProducts',component:OrganicProductsComponent}
+  {path:'products/organicProducts',component:OrganicProductsComponent},
 ];
 
 @NgModule({

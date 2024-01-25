@@ -1,0 +1,73 @@
+.border-box{
+    max-width: 550px;
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 3em;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: all .3s ease;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+div{
+    padding: 10px 10px;
+}
+.ext-link{
+    text-align: center;
+}
+.ext-link a{
+    margin: 0 10px;
+}
+.bordert{
+    margin-left: 20px;
+}
+.btn{
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(15, 167, 255); /* Green */
+    color: white;
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.btn:hover{
+    box-shadow: rgb(54, 181, 255) 5px 7px 20px;
+}
+.btn:active{
+    box-shadow: rgb(15, 167, 255) 0px 7px 29px;
+    transform: translateY(10px);
+}
+.fp{
+    float: right;
+    font-weight: bold;
+}
+.acc{
+    font-weight: bold;
+}
+.acc a{
+color: rgb(35, 136, 252);
+}
+.inputField{
+display: flex;
+gap: 20px;
+border: 1px solid grey;
+}
+small{
+    color: red;
+}
+input{
+    background-color: transparent;
+    border: 0px solid;
+}
+input:focus{
+    outline: none;
+}
+.eye{
+    float: inline-end;
+    background-color: white;
+    border: none;
+    margin-left: 200px;
+    cursor: pointer;
+}

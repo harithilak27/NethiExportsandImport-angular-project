@@ -113,7 +113,145 @@ ng-image-slider .img-div {
 ng-image-slider img {
     width: 150% !important;
   }
+.whatsapp{
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  z-index: 3;
+}
+.tel{
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  z-index: 3;
+}
+.w-img{
+  border-radius: 50px;
+}
+.t-img{
+  border-radius: 60px;
+}
+@media screen and (max-width: 1600px) {
+    .navbar{
+        width: 100%;
+    }
+    section{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .abt-flex{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .abt-flex{
+       justify-content: center;
+    }
+    .navbar{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .menu-open{
+        display: block;
+    }
+    .navbar{
+        text-align: left;
+        z-index: 4;
+    }
+    .navbar-flex{
+        overflow-y: scroll;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 75%;
+        background-color: rgb(252, 252, 252);
+        z-index: 5;
+        padding-top: 50px;
+        color: white;
+        display: block;
+    }
+    .navbar ul{
+        display: block;
+        line-height: 80px;
+    }
+    .nested-nav .list2{
+        position: relative;
+        background-color: rgba(131, 55, 55, 0);
+        padding-left: 20px;
+    }
+    .list2 li{
+        color: black;
 
+    }
+    .organic .list3{
+        position: inherit;
+        background-color: rgba(2, 45, 85, 0);
+    }
+    .organic:hover .list3{
+        display: block;
+        background-color: rgba(2, 45, 85, 0);
+        box-shadow: none;
+    }
+    .navbar p{
+        color: rgb(155, 155, 155);
+        margin: 20px;
+    }
+    .list2 .blank{
+        background-color: rgba(2, 45, 85, 0);
+    }
+    .list2 .blank:hover{
+        color: rgba(3, 50, 95, 0);
+        background-color: rgba(2, 45, 85, 0);
+    }
+    .list2 li:hover{
+        background-color: none;
+        color: black;
+    }
+    .menu-close{
+        color: black;
+        font-size: larger;
+        display: block;
+        width: fit-content;
+        font-weight: bolder;
+    }
+    .menu-close:hover{
+        color: rgba(255, 0, 0, 0.548);
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    @media screen and (max-width: 550px) {
+        .navbar{
+            font-size: 14px;
+        }
+        .logo{
+            width: 130px;
+            margin-top: 10px;
+        }
+        .menu-open{
+            /* margin: 0; */
+            font-size: 25px;
+            /* margin-top: 10px; */
+        }
+        .navbar ul{
+            line-height: 40px;
+        }
+        .logo-flex{
+            display: block;
+        }
+        .logo-flex h2{
+            margin-top: 0;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    }
+}
 @media screen and (max-width: 1600px) {
   .gallery{
     margin:  50PX auto;

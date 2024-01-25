@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { defer } from 'rxjs';
+import { AuthService } from './services/auth.service';
+import { ApiService } from './services/api.service';
+import { Component, OnInit } from '@angular/core';
+import { UserStoreService } from 'src/app/services/user-store.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +13,12 @@ export class AppComponent {
   title = 'ang-app';
 
   status: boolean = false;
+
+  public users:any = [];
+  public role!:string;
+
+  public fullName : string = "";
+  constructor(private api : ApiService, private auth: AuthService, private userStore: UserStoreService) { }
 
   clickEvent(){
     this.status = !this.status;       
@@ -28,4 +37,5 @@ export class AppComponent {
 
   };
   }
+
 }

@@ -60,7 +60,6 @@ h1{
 /* section-2 */
 
 .section-2{
-    /* text-align: center; */
     margin: 13px auto;
     width: 45%;
     background-color: white;
@@ -121,7 +120,24 @@ form h3{
 .submit:disabled{
     background-color: #777777;
 }
-
+.whatsapp{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 3;
+  }
+  .tel{
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 3;
+  }
+  .w-img{
+    border-radius: 50px;
+  }
+  .t-img{
+    border-radius: 60px;
+  }
 @media screen and (max-width: 1000px) {
     .contact-header{
         margin-top: 50px;

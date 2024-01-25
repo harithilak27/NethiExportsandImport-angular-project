@@ -1,3 +1,4 @@
+<app-navbar />
 <div class="slider-container">
     <div class="slider">
       <img [src]="images[currentImageIndex]" class="slider-img" alt="Current Slide" />
@@ -81,5 +82,10 @@
     (imageClick)="imageClickHandler($event)"></ng-image-slider>
 </div>
 
-
+<app-footer />
+<div class="whatsapp">
+  <a href="http://wa.me/+918248339060" target="_blank">
+    <img class="w-img" src="../assets/images/whatsapp.256x256.png" alt="" />
+  </a>
+</div>
   
