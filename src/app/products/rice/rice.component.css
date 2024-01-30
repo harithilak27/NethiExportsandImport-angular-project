@@ -23,6 +23,10 @@ h1{
 .v-flex{
     display: flex;
     gap: 30px;
+    margin-top: 80PX;
+}
+.v-flex img{
+    margin-top: 20px;
 }
 .whatsapp{
     position: fixed;

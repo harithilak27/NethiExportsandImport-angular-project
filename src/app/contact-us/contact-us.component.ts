@@ -17,10 +17,10 @@ export class ContactUsComponent {
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.messageForm = this.fb.group({
       to_name: 'Sir/Madam',
-      from_name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9_-]*$/)]],
+      from_name: ['', [Validators.required, Validators.pattern(/^[a-z A-Z0-9_-]*$/)]],
       from_email: ['', [Validators.required, Validators.email]],
       from_phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
-      message: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9_-]*$/)]]
+      message: ['', [Validators.required, Validators.pattern(/^[a-z A-Z0-9_-]*$/)]]
     });
   }
 

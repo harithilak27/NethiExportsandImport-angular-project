@@ -38,20 +38,20 @@
 
         <form [formGroup]="messageForm" action="javascript.void(0)" (ngSubmit)="send()">
 
-            <label>Name*</label>
-            <input formControlName="from_name" type="name" id="name" placeholder="e.g.(Arul Kumar)" class="name"/>
+            <label>Name :</label>
+            <input formControlName="from_name" type="name" id="name" placeholder="" class="name"/>
             <p *ngIf="messageForm.get('from_name')?.hasError('pattern')" class="red">Name is required</p>
 
-            <label>Email address*</label>
-            <input formControlName="from_email" type="email" id="mail" placeholder="e.g.(ArulKumar@gmail.com)" class="email" />
+            <label>Email address :</label>
+            <input formControlName="from_email" type="email" id="mail" placeholder="" class="email" />
             <p *ngIf="messageForm.get('from_email')?.hasError('email')" class="red">email is required</p>
 
-            <label>Mobile Number*</label>
-            <input formControlName="from_phone" type="phone" id="ph1" placeholder="e.g.(9876543233)" class="phone" />
+            <label>Mobile Number :</label>
+            <input formControlName="from_phone" type="phone" id="ph1" placeholder="" class="phone" />
             <p *ngIf="messageForm.get('from_phone')?.hasError('pattern')" class="red">Invalid phone number</p>
 
             <label>Write your message below*</label>
-            <textarea formControlName="message" class="message" id="textarea" rows="10" placeholder="your message"></textarea>
+            <textarea formControlName="message" class="message" id="textarea" rows="10" placeholder=""></textarea>
             <p *ngIf="messageForm.get('message')?.hasError('pattern')" class="red">message required</p>
 
             <button type="submit" class="submit" [disabled]="!messageForm.valid">Submit form</button>

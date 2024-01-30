@@ -14,29 +14,29 @@
     <div class="menu-close" >
         <h3 (click)="clickEvent()">&#8999;</h3>
     </div>
-    <a routerLink="/home"><li>HOME</li></a>
-    <a routerLink="/aboutus"><li>ABOUT US</li></a>
-    <a><li class="nested-nav">OUR PRODUCTS<br>
+    <a routerLink="/home" routerLinkActive="active"><li>HOME</li></a>
+    <a routerLink="/aboutus" routerLinkActive="active"><li>ABOUT US</li></a>
+    <a><li class="nested-nav" routerLinkActive="active">OUR PRODUCTS<br>
         <ul class="list2">                 
         <li class="blank"></li>
-        <a routerLink="/products/vegetables"><li>VEGETABLES</li></a>
+        <a routerLink="/products/vegetables" ><li>VEGETABLES</li></a>
         <a routerLink="/products/cocoProducts"><li>COCONUT PRODUCT</li></a>
         <a routerLink="/products/rice"><li>RICE</li></a>
         <a routerLink="/products/millets"><li>MILLETS</li></a>
         <a routerLink="/products/ecoFriendly"><li>ECO-FRIENDLY</li></a>
         <a routerLink="/products/leaves"><li>LEAVES</li></a>
-        <li class="organic">ORGANIC PRODUCTS&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &#10148;<br />
+        <li class="organic" routerLinkActive="active">ORGANIC PRODUCTS&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &#10148;<br />
           <ul class="list3">
             <a routerLink="/products/organic/organicFertilizer"><li>&#10148;&nbsp;&nbsp;&nbsp;FERTILIZER</li></a>
             <a routerLink="/products/organic/organicFoods"><li>&#10148;&nbsp;&nbsp;&nbsp;&nbsp;FOODS</li></a>
             <a routerLink="/products/organic/organicCosmetics"><li>&#10148;&nbsp;&nbsp;&nbsp;COSMETICS</li></a>
           </ul>
         </li>
-        <a routerLink="/products/organicProducts"><li>OTHER PRODUCTS</li></a>  
+        <a routerLink="/products/organicProducts" routerLinkActive="active"><li>OTHER PRODUCTS</li></a>  
       </ul>
     </li></a>
-    <a><li>GALLERY</li></a>
-    <a routerLink="/contactus"><li>CONTACT US&nbsp;&nbsp;&nbsp;</li></a>
+    <a routerLink="/gallery" routerLinkActive="active"><li>GALLERY</li></a>
+    <a routerLink="/contactus" routerLinkActive="active"><li>CONTACT US&nbsp;&nbsp;&nbsp;</li></a>
     </ul>
     </div>
 </div>

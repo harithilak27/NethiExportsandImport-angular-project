@@ -3,9 +3,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { LoginComponent } from './components/login/login.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import {NgImageSliderModule} from 'ng-image-slider';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -25,9 +22,14 @@ import { OrganicFoodsComponent } from './organic/organic-foods/organic-foods.com
 import { OrganicCosmeticsComponent } from './organic/organic-cosmetics/organic-cosmetics.component';
 import { MilletsComponent } from './products/millets/millets.component';
 import { EcoFriendlyComponent } from './products/eco-friendly/eco-friendly.component';
-import { TokenInterceptor } from './interceptors/token.interceptor';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { OnionComponent } from './gallery/onion/onion.component';
+import { FertilizerComponent } from './gallery/fertilizer/fertilizer.component';
+import { RiceGalleryComponent } from './gallery/rice-gallery/rice-gallery.component';
+import { PotatoComponent } from './gallery/potato/potato.component';
+import { LeavesGalleryComponent } from './gallery/leaves-gallery/leaves-gallery.component';
 
 @NgModule({
   declarations: [
@@ -46,10 +48,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganicCosmeticsComponent,
     MilletsComponent,
     EcoFriendlyComponent,
-    SignupComponent,
-    DashboardComponent,
-    LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent,
+    OnionComponent,
+    FertilizerComponent,
+    RiceGalleryComponent,
+    PotatoComponent,
+    LeavesGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -67,13 +72,7 @@ import { NavbarComponent } from './navbar/navbar.component';
          }  
       })  
   ],
-  bootstrap: [AppComponent],
-  providers: [{
-    provide: HTTP_INTERCEPTORS,
-    useClass:TokenInterceptor,
-    multi:true
-  }],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 

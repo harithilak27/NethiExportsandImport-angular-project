@@ -23,6 +23,7 @@ h1{
 .v-flex{
     display: flex;
     gap: 30px;
+    margin-top: 50px;
 }
 .v-flex p{
     margin: 20px;

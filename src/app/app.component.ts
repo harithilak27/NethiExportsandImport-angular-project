@@ -1,7 +1,4 @@
-import { AuthService } from './services/auth.service';
-import { ApiService } from './services/api.service';
 import { Component, OnInit } from '@angular/core';
-import { UserStoreService } from 'src/app/services/user-store.service';
 import { NgToastService } from 'ng-angular-popup';
 
 @Component({
@@ -15,27 +12,22 @@ export class AppComponent {
   status: boolean = false;
 
   public users:any = [];
-  public role!:string;
 
-  public fullName : string = "";
-  constructor(private api : ApiService, private auth: AuthService, private userStore: UserStoreService) { }
 
   clickEvent(){
     this.status = !this.status;       
   }
 
-  ngAfterViewInit() {
-    const script = document.createElement('script');
-    script.src = 'https://static.elfsight.com/platform/platform.js';
-    script.setAttribute('data-use-service-core', '');
-    script.setAttribute('defer', '');
-    document.body.appendChild(script);
-  
-  script.onload = () => {
-    // "https://static.elfsight.com/platform/platform.js" 
-    "https://static.elfsight.com/platform/platform.js" 
-
-  };
-  }
-
+  onActivate(event: any) {
+    // window.scroll(0,0);
+ 
+    window.scroll({ 
+            top: 0, 
+            left: 0, 
+            // behavior: 'smooth' 
+     });
+ 
+     //or document.body.scrollTop = 0;
+     //or document.querySelector('body').scrollTo(0,0)
+ }
 }
